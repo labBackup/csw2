@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <p id="addResult"></p>
+    <p id="subResult"></p>
+
+
+
+    <script>
+        function add(a,b) {
+            return a + b;
+        }
+        let sub = (x, y) => x - y;
+        document.getElementById('addResult').innerText = "5 + 2 = " + add(5,2);
+        document.getElementById('subResult').innerHTML = "5 - 2 = " + sub(5,2)
+    </script>
+</body>
+</html>

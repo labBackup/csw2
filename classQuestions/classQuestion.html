@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassQuestion</title>
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th:hover, td:hover {
+            border-color: brown;
+            background-color: blanchedalmond;
+        }
+        th {
+            background-color: #C5C7BC;
+            font-weight: bold;
+        }
+        td {
+            background-color: #DEDED1;
+        }
+        body {
+            background-color: #B6AE9F;
+            color: #4e5542;
+            font-family: sans-serif;
+        }
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h1>JavaScript Operations</h1>
+        <tr>
+            <th>Operation</th>
+            <th>A</th>
+            <th>B</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>A+B</td>
+            <td id="addA"></td>
+            <td id="addB"></td>
+            <td id="add"></td>
+        </tr>
+        <tr>
+            <td>A-B</td>
+            <td id="subA"></td>
+            <td id="subB"></td>
+            <td id="sub"></td>
+        </tr>
+        <tr>
+            <td>A*B</td>
+            <td id="mulA"></td>
+            <td id="mulB"></td>
+            <td id="mul"></td>
+        </tr>
+    </table>
+    <script>
+        let addA = 10,addB = 20;
+        document.getElementById('addA').innerText = addA
+        document.getElementById('addB').innerText = addB
+        document.getElementById('add').innerText =  addA + addB;
+
+        let subA = 30,subB = 20;
+        document.getElementById('subA').innerText = subA
+        document.getElementById('subB').innerText = subB
+        document.getElementById('sub').innerText =  subA - subB;
+
+        let mulA = 10,mulB = 2;
+        document.getElementById('mulA').innerText = mulA
+        document.getElementById('mulB').innerText = mulB
+        document.getElementById('mul').innerText =  mulA * mulB;
+    </script>
+</body>
+</html>

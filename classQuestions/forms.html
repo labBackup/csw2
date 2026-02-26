@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form{
+            width: 80%;
+            margin-right: auto;
+            font-family: sans-serif;
+            font-size: larger;
+            padding: 2%;
+
+        }
+        #name, #email, #phone{
+            
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <h2>Student Form</h2>
+        Name: <input type="text" id="name"> <br>
+        Email: <input type="email" id="email"> <br>
+        Phone: <input type="tel" id="phone"> <br>
+        <input type="submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            if (name == '' || email == '' || phone == ''){
+                alert("All fields must be filled!")
+            }
+        }
+    </script>
+</body>
+</html>

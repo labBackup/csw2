@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practiceQuestions</title>
+</head>
+<body>
+    <h1>Practice Questions</h1>
+    Question 1
+    <p id="ques1"></p>
+    <hr>
+    Question 2
+    <p id="ques2"></p>
+    <hr>
+    Question 3
+    <p id="ques3"></p>
+    <hr>
+    Question 4
+    <p id="ques4"></p>
+    <hr>
+    Question 5 <br>
+    Is the number positive, negative or zero?
+    <br>
+    <input id='numQ5' type="number">
+    <button onclick="checkNums()">Click Me</button>
+    <p id="ques5"></p>
+    <hr>
+    Question 6 <br>
+    Even numbers from 1 to 50
+    <br>
+    <button onclick="question6()">Click Me</button>
+    <p id="ques6"></p>
+    <hr>
+    Question 7 <br>
+    To find the factorial of a number
+    <br>
+    <input type="number" id="ques7num">
+    <button onclick="question7()">Click Me</button>
+    <p id="ques7"></p>
+    <hr>
+    Question 8 <br>
+    Current Date and Time
+    <p id="ques8"></p>
+    <hr>
+    Question 9 <br>
+    <button onclick="question9()">Click to change to color</button>
+    <p id="ques9" style="color:chocolate">Look at some text</p>    
+    <hr>
+    Question 10
+    <p id="ques10"></p>
+    A = <input type="number" id="Q10A" style="width: 30px;">
+    <br>
+    B = <input type="number" id="Q10B" style="width: 30px;">
+    <br>
+    <button onclick="question10()">Click Me</button>
+    <hr>
+
+
+    <script>
+        // Question 1
+        var a = 3, b = 2;
+        document.getElementById('ques1').innerHTML = "a = "+a+"<br>"+"b = "+b
+        // Question 2
+        var a = 10, b = 5;
+        let add = a + b;
+        let sub = a - b;
+        let mul = a * b;
+        let div = a / b;
+        let mod = a % b;
+        document.getElementById('ques2').innerHTML = 
+            "<b>Arithmetic Operators</b> <br>" + 
+            "a + b = " + add + "<br>" +
+            "a - b = " + sub + "<br>" +
+            "a * b = " + mul + "<br>" +
+            "a / b = " + div + "<br>" +
+            "a % b = " + mod + "<br><br>"
+        // Question 3
+        var a = 4;
+        document.getElementById('ques3').innerHTML = a + "^2 = " + a**2 
+        // Question 4
+        var a = 6, b = 2;
+        if (a > b){
+            document.getElementById('ques4').innerHTML = "a = 6, b = 2 <br>"+ a + " is greater than "+ b
+        } else {
+            document.getElementById('ques4').innerHTML = "a = 6, b = 2 <br>"+ b + " is greater than "+ a
+        }
+        // Question 5
+        function checkNums(){
+            let num = document.getElementById('numQ5').value;
+            if (num > 0){
+                document.getElementById('ques5').innerHTML = "Is positive"
+            } else if (num == 0) {
+                document.getElementById('ques5').innerHTML = "Is zero"
+            } else {
+                document.getElementById('ques5').innerHTML = "Is negative"
+            }
+        }
+        // Question 6
+        function question6(){
+            var string = " "
+            for (let index = 1; index <= 50; index++) {
+                if (index % 2 == 0){
+                    string = string + index + "<br>";
+                    console.log(string)
+                    document.getElementById('ques6').innerHTML = string;
+                }
+
+            }
+        }
+        // Question 7
+        function question7(){
+            var num = document.getElementById('ques7num').value
+            var fact = 1;
+            for (let index = 1; index <= num ; index++) {
+                fact = fact * index;
+            }
+            document.getElementById('ques7').innerHTML = num+"! = "+fact;
+        }
+        // Question 8
+            let time = new Date();
+            document.getElementById('ques8').innerText = time;
+
+        // Question 9
+        function question9(){
+            document.getElementById('ques9')
+        }
+        // Question 10
+        function question10(){
+            var A = document.getElementById('Q10A').value;
+            var B = document.getElementById('Q10B').value;
+            document.getElementById('ques10').innerHTML = "" + A + "+" + B + "="+(A+B);
+        }
+    </script>
+</body>
+</html>

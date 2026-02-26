@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <h2>JavaScript Syntax Basics Example</h2>
+    <p id='output'> </p>
+    <script>
+        let a = 10, b = 5;
+        let add = a + b;
+        let sub = a - b;
+        let mul = a * b;
+        let div = a / b;
+        let mod = a % b;
+
+        let greater = a > b;
+        let less = a < b;
+        let equals = (a == b);
+        let equalsStrict = (a === b);
+        let notEquals = (a != b);
+
+        let x = 10;
+        let andResult = (x > 5 && x < 20);
+        let orResult = (x > 5 || x < 20);
+        let notResult = !(x > 5);
+        document.getElementById('output').innerHTML = 
+            "<b>Arithmetic Operators</b>" + 
+            "a + b = " + add + "<br>" +
+            "a - b = " + sub + "<br>" +
+            "a * b = " + mul + "<br>" +
+            "a / b = " + div + "<br>" +
+            "a % b = " + mod + "<br><br>" +
+
+            "<b>Comparison Operators</b>" + 
+            "a > b = " + greater + "<br>" +
+            "a < b = " + less + "<br>" +
+            "a == b = " + equals + "<br>" +
+            "a === b = " + equalsStrict + "<br>" +
+            "a != b = " + notEquals + "<br><br>" +
+
+            "<b>Logical Operators</b>" + 
+            "x > 5 && x < 20 = " + andResult + "<br>" +
+            "x > 5 || x < 20 = " + orResult + "<br>" +
+            "!(x > 5) = " + notResult + "<br><br>"
+    </script>
+</body>
+</html>

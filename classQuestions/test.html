@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassQuestion</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th, td:hover {
+            border-style: dotted;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Operation</th>
+            <th>A</th>
+            <th>B</th>
+            <th>Result</th>
+        </tr>
+        <tr>
+            <td>A+B</td>
+            <td id="addA"></td>
+            <td id="addB"></td>
+            <td id="add"></td>
+        </tr>
+        <tr>
+            <td>A-B</td>
+            <td id="subA"></td>
+            <td id="subB"></td>
+            <td id="sub"></td>
+        </tr>
+        <tr>
+            <td>A*B</td>
+            <td id="mulA"></td>
+            <td id="mulB"></td>
+            <td id="mul"></td>
+        </tr>
+    </table>
+    <script>
+        let addA = 2,addB = 3;
+        document.getElementById('addA').innerText = addA
+        document.getElementById('addB').innerText = addB
+        document.getElementById('add').innerText =  addA + addB;
+
+        let subA = 1,subB = 1;
+        document.getElementById('subA').innerText = subA
+        document.getElementById('subB').innerText = subB
+        document.getElementById('sub').innerText =  subA - subB;
+
+        let mulA = 2,mulB = 2;
+        document.getElementById('mulA').innerText = mulA
+        document.getElementById('mulB').innerText = mulB
+        document.getElementById('mul').innerText =  mulA * mulB;
+    </script>
+</body>
+</html>

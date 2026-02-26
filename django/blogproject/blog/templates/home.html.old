@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #222831;
+            color: #948979; 
+        }
+        .main {
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .post {
+            background-color: #393E46;
+            width: 500px;
+            border-radius: 5px;
+            padding:5%;
+            margin-bottom: 5px;
+        }
+        .post:hover{
+            background-color: rgba(46, 47, 53, 0.07);
+            border-style: dotted;
+            border-color: aliceblue;
+        }
+        h1 {
+            color: #DFD0B8;
+            text-align: center;
+        }
+        .heading{
+            width: 500px;
+            border-radius: 5px;
+            padding:2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class='heading'>
+        <h1> Posts </h1>
+        </div>
+        {% for post in posts %}
+        <div class='post'>
+            <h2> {{post.title}} </h2>
+            <p> {{post.content}} </p>
+            <small> {{post.created_at}} </small>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

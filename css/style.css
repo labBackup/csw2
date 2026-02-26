@@ -1,0 +1,39 @@
+/* 9 */
+body {
+    /* 3 */
+    background-color: #7AAACE;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Light-Blue-Backgrounds-Free-Download.jpg);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #355872;
+    /* 2 */
+    text-align: center; 
+
+}
+p {
+    /* 1 */
+    color: #355872;
+    /* 6 */
+    margin: 5px;
+    padding: 20px;
+}
+
+.para {
+    /* 4 */
+    font-size: 25px;
+    /* 8 */
+    border: 5px solid rgb(122, 170, 206);
+    border-radius: 7px;
+    border-style: dotted;
+}
+
+#box {
+    /* 5 and also 7*/ 
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid rgb(122, 170, 206);
+    border-radius: 7px;
+}
